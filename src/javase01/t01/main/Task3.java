@@ -13,14 +13,13 @@ public class Task3 {
         b = in.nextDouble();
         System.out.println("Enter h:");
         h = in.nextDouble();
-        while (a <= b){
+        while (a <= b) {
             System.out.format("%8.3f %8.3f\n", a, f(a));
             a += h;
         }
     }
 
-    private static double f(double x)
-    {
+    private static double f(double x) {
         return Math.tan(2 * x) - 3;
     }
 }

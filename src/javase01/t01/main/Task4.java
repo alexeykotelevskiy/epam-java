@@ -15,17 +15,18 @@ public class Task4 {
         }
         System.out.println();
         int max = a[0] + a[a.length - 1];
-        for (int i = 1; i < a.length / 2; i++){
-            if (a[i] + a[a.length - 1 - i] > max)
+        for (int i = 1; i < a.length / 2; i++) {
+            if (a[i] + a[a.length - 1 - i] > max) {
                 max = a[i] + a[a.length - 1 - i];
+            }
         }
         System.out.println(max);
     }
 
-    private static int[] getRandomArray(int n){
+    private static int[] getRandomArray(int n) {
         int[] a = new int[n];
         Random r = new Random();
-        for (int i = 0; i < a.length; i++){
+        for (int i = 0; i < a.length; i++) {
             a[i] = r.nextInt(100);
         }
         return a;
