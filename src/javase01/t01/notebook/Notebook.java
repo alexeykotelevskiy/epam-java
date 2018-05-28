@@ -1,7 +1,6 @@
 package javase01.t01.notebook;
 
 import java.util.Arrays;
-
 import oracle.jrockit.jfr.Recording;
 
 /**
